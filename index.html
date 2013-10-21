@@ -11,6 +11,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
+			<link rel="stylesheet" href="css/leaflet.css" />
+			<!--[if lte IE 8]>
+				 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+			<![endif]-->
         <link rel="stylesheet" href="css/bootstrap.css">
 		  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="css/responsive.css">
@@ -28,11 +32,11 @@
                     <a class="brand" href="index.html"><img src="img/logo.png" />QGISWeekend</a>
                     <div class="nav-collapse collapse pull-right">
                         <ul class="nav">
-                            <li class="active"><a href="#about">About us</a></li>
+                            <li class="active"><a href="#about">Home</a></li>
                             <li><a href="#guests">Guests</a></li>                            
+                            <li><a href="#features">Features</a></li>                            
                             <li><a href="#signup">Sign Up</a></li>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#where">Where</a></li>
                             <li><a href="#sponsors">Sponsors</a></li>                            
                         </ul>
                     </div><!--/.nav-collapse -->
@@ -46,9 +50,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="span10 offset1">
-                            <div class="hero ">
-                                <h1 rel="tooltip" title="QGISWeekend, November 29 & 30, Santiago de Compostela" data-placement="right">QGISWeekend</h1>
-                                <p class="cursive" rel="tooltip" title=" " data-placement="bottom">A weekend to enjoy QGIS</p>
+                            <div class="hero">
+                                <div rel="tooltip" title="QGISWeekend, November 29 & 30, Santiago de Compostela" data-placement="right"><h1 >QGISWeekend</h1>
+                                <h2>November 29 & 30, Santiago de Compostela</h2>
+                                <p class="cursive" rel="tooltip" title=" " data-placement="bottom">A weekend to enjoy QGIS</p></div>
                                 <img class="qgis-photo img-rounded" src="img/qgis20_headers_editing.jpg" />
                             </div>
                         </div>
@@ -60,34 +65,26 @@
                 <div class="container">
                     <!-- List of the key, unquie features  of your app -->
                     <div class="row">
-                        <div class="span6">
-                            <div class="feature">
-                                <h2>Victor Olaya</h2>
-                       				<img class="img-polaroid" src="img/volaya.jpg" />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum elementum eros, tristique ultricies arcu. Vivamus id dui id mauris vulputate mollis. Suspendisse potenti. Proin id justo pellentesque, tincidunt tortor quis, lacinia orci. Proin pulvinar fermentum metus lacinia lobortis. Praesent quis placerat ligula. Vivamus nunc risus, mollis a lectus sed, dictum dapibus dolor. Nullam nisl erat, congue nec mauris nec, imperdiet venenatis ligula. Vestibulum aliquet ornare orci, et sollicitudin velit egestas vel. Curabitur facilisis, felis aliquam posuere pulvinar, nunc est posuere magna, sit amet interdum sem massa eget odio. Proin quis elit id nisi interdum cursus. Nullam ornare mattis lectus nec dignissim. In dignissim nunc eu lobortis vehicula.</p>
-                            </div>
-                        </div>
+
                         <div class="span6">
                             <div class="feature">
                                 <h2>Paolo Cavallini</h2>
 											<img class="img-polaroid" src="img/pcavallini.jpg" />
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum elementum eros, tristique ultricies arcu. Vivamus id dui id mauris vulputate mollis. Suspendisse potenti. Proin id justo pellentesque, tincidunt tortor quis, lacinia orci. Proin pulvinar fermentum metus lacinia lobortis. Praesent quis placerat ligula. Vivamus nunc risus, mollis a lectus sed, dictum dapibus dolor. Nullam nisl erat, congue nec mauris nec, imperdiet venenatis ligula. Vestibulum aliquet ornare orci, et sollicitudin velit egestas vel. Curabitur facilisis, felis aliquam posuere pulvinar, nunc est posuere magna, sit amet interdum sem massa eget odio. Proin quis elit id nisi interdum cursus. Nullam ornare mattis lectus nec dignissim. In dignissim nunc eu lobortis vehicula.</p>
+                                <p> Paolo Cavallini is Founder of Faunalia a company specialized in FOSS4G between Italy and Portugal. He is Member of QGIS Project Steering Commitee with the role of Financial/Marketing Advisor. Co-founder and past president of GFOSS.it - Italian Geographic Free and Open-Source Software Association has a big implication in many of comunity movements around the free software for geomatic. Charter member of OSGeo - Open Source Geospatial Foundation * international foundation and Co-founder of ITPUG - ITalian PostgreSQL User Group. Over 10 years working around the free and open source GIS software.
+Paolo will be here to share all his knowledges about the QGIS project with us.</p>
                             </div>
                        </div>
-                    </div>
-                </div>
-            </section>            
-            
-            <section class="dark" id="signup">
-                <div class="container">
-                    <div class="row">
-                        <div class="span12 center">
-                            <h2 class="cursive"> Start your 30 day free trial </h2>
-                            <div class="input-append">
-                                <input class="span5 input-large" placeholder="you@email.com" type="text">
-                                <button class="btn btn-outline btn-dark btn-large" type="button">
-                                    Sign Up!
-                                </button>
+                                               <div class="span6">
+                            <div class="feature">
+                                <h2>Victor Olaya</h2>
+                       				<img class="img-polaroid" src="img/volaya.jpg" />
+                                <p>Victor is the creator and main developer of the QGIS Processing
+Framework, and evolution of the SEXTANTE geospatial analysis library
+that is now integrated into QGIS as a core plugin. He has contributed
+to the PyQGIS cookbook and is a frequent lecturer on QGIS and spatial
+analysis. He works at Boundless, where he is currently developing QGIS
+plugins that allow to interact from QGIS with OpenGeo Suite and the
+distributed versioning system for spatial data GeogGit.</p>
                             </div>
                         </div>
                     </div>
@@ -98,35 +95,50 @@
                 <div class="container">
                     <!-- List of the key, unquie features  of your app -->
                     <div class="row center">
-                        <div class="span4">
+                        <div class="span6">
                             <div class="feature">
-                                <h2>Learn</h2>
-                                <i class="icon-gears icon-feature" rel="tooltip" title="220 beautiful icons provided by Font Awesome, the iconic font designed for use with Twitter Bootstrap." data-placement="bottom"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum elementum eros, tristique ultricies arcu. Vivamus id dui id mauris vulputate mollis. Suspendisse potenti. Proin id justo pellentesque, tincidunt tortor quis, lacinia orci.</p>
+                            <i class="icon-share icon-feature" data-placement="bottom"></i>
+                                <h2>Friday 29th November</h2>
+                                <h3>Know QGIS Project with Paolo Cavallini</h3>                                
+                                <p>Do you know the QGIS Project?, do you know the benefits of using it in your projects?. Paolo Cavallini will share with us all he knows about the QGIS Project. After a brief presentation will have a time to discuss with Paolo doubts, interests and what you want about the QGIS project.</p>
+                                <h4><a href="#signup">Free registration is required</a></h4>
                             </div>
                         </div>
-                        <div class="span4">
+                        <div class="span6">
                             <div class="feature">
-                                <h2>Share</h2>
-                                <i class="icon-share icon-feature" rel="tooltip" title="Share your knowledge" data-placement="bottom"></i>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum elementum eros, tristique ultricies arcu. Vivamus id dui id mauris vulputate mollis. Suspendisse potenti. Proin id justo pellentesque, tincidunt tortor quis, lacinia orci. </p>
+                            		<i class="icon-gears icon-feature" data-placement="bottom"></i>
+                                <h2>Saturday 30th November</h2>
+                                <h3>QGIS development with Victor Olaya</h3>
+                                <p> If you ever wanted to learn how is the developing in QGIS, Victor Olaya will help you to start with this. During all this day he will teach you how prepare the development enviroment and how make your first features. We will learn the details of the QGIS software architecture.</p>
+                                <h4><a href="#signup">Free registration is required</a></h4>
                             </div>
                        </div>
-                        <div class="span4">
-                            <div class="feature">
-                                <h2>Enjoy</h2>
-                                <i class="icon-smile icon-feature" rel="tooltip" title="Enjoy!" data-placement="bottom"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum elementum eros, tristique ultricies arcu. Vivamus id dui id mauris vulputate mollis. Suspendisse potenti. Proin id justo pellentesque, tincidunt tortor quis, lacinia orci.</p>
-                            </div>
+                    </div>
+                </div>
+            </section>        
+            
+            <section class="dark" id="signup">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12 center">
+                            <h2 class="cursive"> Registration will open shortly </h2>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            <section class="white" id="pricing">
+                        
+            <section class="white" id="where">
                 <div class="container">
-                    <div class="row pricing">
-                        <h1 class="trocchi center shadow-text"> Clear pricing, with no hidden costs. </h1>
+                    <div class="row">
+                    	<div class="span12">
+                        <div id="map" class="map"></div>
+                     </div>
+                        <div class="span12 center">
+                            <h2> Centro de Novas Tecnoloxías de Galicia</h2>
+                            <h4>Rúa Airas Nunes, s/n - Conxo</h4>
+<h4>15702 - Santiago de Compostela </h4>
+<h4>A Coruña</h4>
+                        </div>                     
                     </div>
                 </div>
             </section>
@@ -134,45 +146,37 @@
             <section class="blue" id="sponsors">
                 <div class="container">
                     <div class="row">
-                    		<div class="span3">
-                    			<a href="http://imit.xunta.es/portal/sxmit/AMTEGA/" target="_blank"><img class="logo" src="img/amtega.png" /></a>
-                    		</div>
+                        <div class="span12 center">
+                            <h2 class="cursive"> Thanks to our sponsors. </h2>
+                        </div>
+                    		<div class="span12 center">
+                            <h4 class="cursive"> <a href="mailto:secretaria@ghandalf.org" target="_blank">Contact with us to be sponsor.</a> </h4>
+                        </div>
                     </div>
                 </div>
             </section>
+            
+            <section class="white" id="organizers">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12 center">
+                            <h2 class="cursive"> Organized by </h2>
+                        </div>
+                        <div class="span6">                        
+                            <a href="http://www.ghandalf.org/"><img src="img/GHANDALF_Simbolo-Logo.png" /></a>
+                        </div>
+                        <div class="span6">                        
+                            <a href="http://xeoinquedos.net"><img src="img/Logo XeoInquedos-01-w.png" /></a>
+                        </div>                        
+                    </div>
+                </div>
+            </section>            
         </div>
 
         <footer>
-            <ul  class="unstyled credit center">
+      		<ul  class="unstyled credit center">
                 <li rel="tooltip" title="Any feedback is welcome. Reach out to us on twitter (@xeoinquedos)" data-placement="top"> 
                     Designed by <a href="http://twitter.com/xeoinquedos"> Xeoinquedos </a>
-                </li>
-            </ul>
-            <!--ul class="unstyled links center">
-                <li>
-                    <a href="">
-                        Contact Us
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Privacy Policy
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Terms of Service
-                    </a>
-                </li>
-            </ul-->
-            <ul  class="unstyled rights center">
-                <li> 
-                    Copyright &copy; 2013 Company. All rights reserved 
                 </li>
             </ul>
         </footer>
@@ -181,13 +185,11 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
-
+        <script type="text/javascript" src="js/leaflet.js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
         <script type="text/javascript" src="js/bootstrap-scrollspy.js"></script>
-
         <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
-
         <script type="text/javascript" src="js/bootstrap-collapse.js"></script>
-
         <script type="text/javascript" src="js/bootstrap-tooltip.js"></script>
         <script type="text/javascript">
             $("[rel=tooltip]").tooltip();
@@ -202,10 +204,12 @@
                 });
                 return false
             });
+            $(document).ready(function(){
+            	initMap();
+            })
         </script>
         <script type="text/javascript" src="js/fitvid.js"></script>
         <script type="text/javascript" src="js/launch.js"></script>
-
     </body>
 </html>
 

@@ -1,3 +1,11 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
 .clearfix {
   *zoom: 1;
 }
@@ -133,15 +141,9 @@ footer .rights {
 .pricing .plan ul li {
   margin: 12px 0;
 }
-.feature {
-  padding-bottom: 15px;
+.map {
+	height: 300px;
 }
-.feature p {
-  padding: 0 48px;
-}
-.video {
-  padding-top: 30px;
-  width: 80%;
-  max-width: 480px;
-  margin: 0 auto;
+#guests .img-polaroid {
+	margin-bottom:10px;
 }
